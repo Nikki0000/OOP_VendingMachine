@@ -59,10 +59,16 @@ public class ProductMain {
         HotDringVandingMachine vm3 = new HotDringVandingMachine();
         System.out.println(vm3.getProducts());
         System.out.println("");
+
         vm3.addProducts(List.of(hotDrink1, hotDrink2, hotDrink2));
         System.out.println(vm3.getProducts());
         System.out.println("");
-        vm3.getProduct("Глинтвейнн", 1F, 50);
+
+        vm3.getProduct("Глинтвейн", 1F, 50);
+        System.out.println(vm3.getProducts());
+
+        System.out.println("");
+        vm3.getProduct("Чай", 0.3F, 90);
         System.out.println(vm3.getProducts());
 
 
